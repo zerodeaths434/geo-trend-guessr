@@ -1,0 +1,24 @@
+{
+  "name": "googletrends",
+  "version": "1.0.0",
+  "description": "",
+  "engines":{
+    "node":"16.13.1"
+  },
+  "main": "App.js",
+  "scripts": {
+    "start": "node App.js",
+    "dev": "nodemon App.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "google-trends-api": "^4.9.2",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.1.2"
+  }
+}
